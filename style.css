@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #d3ebf3;
+}
+
+.dino {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  background-image: url(images/sonic.png);
+  background-size: cover;
+  bottom: 0;
+}
+
+.cactus {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  bottom: 0;
+  background-image: url(images/spikes.png);
+  background-size: cover;
+}
+
+.game-over {
+  text-align: center;
+  color: #555;
+  margin-top: 100px;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.background {
+  position: absolute;
+
+  bottom: 0;
+  background-image: url(images/background-sonic.png);
+  background-repeat: repeat-x;
+  animation: slideright 1000s infinite linear;
+  width: 100vw;
+  height: 200px;
+}
+
+@keyframes slideright {
+  from {
+    background-position: 50000%;
+  }
+
+  to {
+    background-position: 0%;
+  }
+}
